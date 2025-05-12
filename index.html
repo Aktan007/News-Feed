@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>НовостиБeacon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/img/header__img__logo.png" />
+    <link rel="stylesheet" href="/CSS/main.css">
+</head>
+<body>
+    <header>
+        <div class="header__container">
+            <div class="header__body">
+
+                <div class="header__logo">
+                    <a class="header__img" href="#"><img src="/img/header__img__logo.png" alt="logo"/></a>
+                    <a  class="header__logo_text" href="#">НовостиБeacon</a>
+                </div>
+
+                <div class="header__buttons">
+                    <nav class="header__filer__category" id="category-filter">
+                        <button class="category-btn active" data-category="all">Все</button>
+                        <button class="category-btn" data-category="business">Экономика</button>
+                        <button class="category-btn" data-category="politics">Политика</button>
+                        <button class="category-btn" data-category="entertainment">Культура</button>
+                        <button class="category-btn" data-category="sports">Спорт</button>
+                    </nav>
+                </div>
+                
+
+            </div>
+        </div>
+        
+      </header>
+
+      <main class="news__card" id="news-container">
+        <div class="grid" id="grid-container"></div>
+      </main>
+      
+
+      <section class="live">
+        <h2>Прямой эфир</h2>
+        <div class="video">
+          <iframe width="560" height="315" src="https://rutube.ru/play/embed/d14fcf59cb7d07a26c48ebc8c6565f44/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+          <div class="info">
+            <div class="live-indicator">
+              <div class="live_icon"></div>
+              <p class="live-red">LIVE NOW</p>
+            </div>
+            <p class="live__text">Прямая трансляция новостей</p>
+            <p class="subtext">Актуальные новости в прямом эфире</p>
+          </div>
+        </div>
+      </section>
+      <section class="subscribe">
+  <h3>Подписка на новости</h3>
+  <h4>Получайте самые свежие новости на вашу 
+электронную почту</h4>
+  <input type="email" id="subscribe-email" placeholder="example@email.com" />
+  <select id="category-select">
+    <option value="business">Экономика</option>
+    <option value="politics">Политика</option>
+    <option value="entertainment">Культура</option>
+    <option value="sports">Спорт</option>
+  </select>
+  <button>Подписаться</button>
+  <p id="subscribe-msg"></p>
+</section>
+
+
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__body">
+            <div class="footer__colums">
+
+              <div class="footer__colum-1">
+                  <div class="footer__logo-section">
+                  <div class="footer__logos">
+                  <img src="/img/footer__img_logo.png" alt="" class="footer__logo">
+                  <p class="footer__text">НовостиБeacon</p>
+              </div>
+                <p class="footer__logo-under-text">Актуальные новости и прямые трансляции <br> со всего мира только у нас</p>
+            </div>
+          </div>
+
+              <div class="footer__column-2">
+                <p class="footer__column2-text-1">Разделы</p>
+                <div class="footer__category-filter">
+                  <button class="category-btn" data-category="business">Экономика</button>
+                  <button class="category-btn" data-category="politics">Политика</button>
+                  <button class="category-btn" data-category="entertainment">Культура</button>
+                  <button class="category-btn" data-category="sports">Спорт</button>
+                </div>
+            </div>
+
+            <div class="footer__column-3">
+              <p class="footer__column3-text-1">Контакты</p>
+              <p class="footer__column3-text-2">Москва, ул. Примерная, 122</p>
+              <p class="footer__column3-text-2">Телефон: +7(999)123-45-67</p>
+              <p class="footer__column3-text-2">E-mail: info@news-beacon.ru</p>
+            </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__under">
+          <p class="footer__under-text-1">
+            © 2025 НовостиБeacon | Все права защищены.
+          </p>
+        </div>
+
+      </footer>
+            
+      <script src="/getNewsFetch.js" type="module"></script>
+</body>
+</html>
